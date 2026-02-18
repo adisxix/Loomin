@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="home.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline class="bg-video">
+<source src="bg.mp4" type="video/mp4">
+</video>
+
+<h2>LOOMIN</h2>
+
+<div class="strip">
+<span id="firstnameDisplay"></span>
+<span id="time"></span>
+</div>
+
+<div class="boxes">
+
+<div class="box goals-box">
+    <h3>Goals</h3>
+
+    <div class="goal-item">
+        <input type="checkbox" class="goal-check">
+        <input type="text" class="goal-input" placeholder="Enter goal...">
+    </div>
+
+    <div class="goal-item">
+        <input type="checkbox" class="goal-check">
+        <input type="text" class="goal-input" placeholder="Enter goal...">
+    </div>
+
+    <div class="goal-item">
+        <input type="checkbox" class="goal-check">
+        <input type="text" class="goal-input" placeholder="Enter goal...">
+    </div>
+
+    <div class="goal-item">
+        <input type="checkbox" class="goal-check">
+        <input type="text" class="goal-input" placeholder="Enter goal...">
+    </div>
+
+    <div class="goal-item">
+        <input type="checkbox" class="goal-check">
+        <input type="text" class="goal-input" placeholder="Enter goal...">
+    </div>
+
+    <button id="clearGoals" class="clear-btn">Clear Goals</button>
+</div>
+
+<div class="box timer-box">
+
+    <h3>Timer</h3>
+
+    <div class="timer-inputs">
+        <input type="number" id="hoursInput" placeholder="HH" min="0">
+        <input type="number" id="minutesInput" placeholder="MM" min="0">
+        <input type="number" id="secondsInput" placeholder="SS" min="0">
+    </div>
+
+    <div class="timer-display" id="timerDisplay">
+        00:00:00
+    </div>
+
+    <div class="timer-buttons">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+<div class="break-container" id="breakContainer">
+
+<button id="breakBtn" class="break-btn">Take a Break</button>
+
+<div class="active-break" id="activeBreak">
+    <p class="break-text">Taking a break...</p>
+    <button id="endBreakBtn" class="end-break-btn">End Break</button>
+</div>
+
+</div>
+
+<audio id="breakSound" src="tone.mp3" preload="auto"></audio>
+
+
+<audio id="breakSound" src="tone.mp3" preload="auto"></audio>
+
+</div>
+
+<div class="box ai-box">
+
+
+<div class="ai-start" id="aiStart">
+    <h4 class="ai-text">Stuck Somewhere ?</h4>
+    <button id="askLeoBtn" class="ask-leo-btn">Ask Leo</button>
+</div>
+
+<div class="ai-chat" id="aiChat">
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <div class="chat-input-container">
+        <input type="text" id="chatInput" placeholder="Ask something...">
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+
+</div>
+
+
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>

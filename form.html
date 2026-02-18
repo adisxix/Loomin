@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="form.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<h2>LOOMIN</h2>
+
+<form id="userForm" action="loading.html">
+
+<h3>Fill up the box fam</h3>
+<br><br>
+<div class="name-row">
+<input id="firstName" class="name" type="text" placeholder="First Name">
+<input id="lastName" class="name" type="text" placeholder="Last Name">
+</div>
+
+<br><br>
+
+<p>What pronouns you rocking?</p>
+
+<div class="checkbox">
+<label>
+<input type="radio" name="gender" value="male">
+He/Him
+</label>
+
+<label>
+<input type="radio" name="gender" value="female">
+She/Her
+</label>
+
+<label>
+<input type="radio" name="gender" value="others">
+Others
+</label>
+</div>
+<br><br>
+
+<p>What's your current level?</p>
+<input id="age" class="number" type="number" placeholder="Age">
+<br><br>
+<br><br>
+
+<button type="submit">let me cook</button>
+
+</form>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup">&times;</span>
+    <img src="error.png" alt="Error">
+  </div>
+</div>
+
+
+<script src="form.js"></script>
+</body>
+</html>
